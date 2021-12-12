@@ -1066,7 +1066,6 @@
 
 &pmu_io_domains {
 	status = "okay";
-	uboot-set = <RK3399_PMU1830_VDD_3V0>;
 	pmu1830-supply = <&vcc_3v0>;
 };
 
