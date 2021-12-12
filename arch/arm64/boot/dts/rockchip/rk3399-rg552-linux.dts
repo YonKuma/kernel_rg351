@@ -1056,23 +1056,6 @@
 	};
 };
 
-/* EXT Header(P2) : 7(SCL:GPIO0.C2), 8(SDA:GPIO0.C3) */
-&i2c1 {
-	status = "okay";
-	clock-frequency = <400000>;
-};
-
-/* MIPI CSI I2C */
-&i2c2 {
-	status = "disabled";
-};
-
-/* I2S 1 Channel Used */
-&i2s1_2ch {
-	status = "okay";
-	#sound-dai-cells = <0>;
-};
-
 &io_domains {
 	status = "okay";
 	uboot-set = <(RK3399_BT656_VDD_1V8 | RK3399_AUDIO_VDD_1V8 |
@@ -1081,14 +1064,6 @@
 	audio-supply = <&vcca3v0_codec>; /* audio_gpio3d4a_ms */
 	sdmmc-supply = <&vcc_sdio>; /* sdmmc_gpio4b_ms */
 	gpio1830-supply = <&vcc_3v0>; /* gpio1833_gpio4cd_ms */
-};
-
-&isp_mmu {
-	status = "okay";
-};
-
-&mipi_dphy_rx0 {
-	status = "okay";
 };
 
 &pmu_io_domains {
