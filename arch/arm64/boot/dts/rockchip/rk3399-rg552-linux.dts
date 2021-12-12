@@ -772,8 +772,8 @@
 					regulator-suspend-microvolt = <3000000>;
 				};
 			};
-			
-			vdd_center: DCDC_REG1 {
+
+			vdd_center: vdd_center {
 				regulator-name = "vdd_center";
 				regulator-min-microvolt = <750000>;
 				regulator-max-microvolt = <1350000>;
@@ -796,7 +796,7 @@
 				};
 			};
 
-			vcca3v0_codec: LDO_REG5 {
+			vcca3v0_codec: vcca3v0_codec {
 				regulator-name = "vcca3v0_codec";
 				regulator-min-microvolt = <3000000>;
 				regulator-max-microvolt = <3000000>;
@@ -809,7 +809,7 @@
 			};
 
 			/* Rev 0.2 LCD Backlight Power */
-			vcc_backlight: LDO_REG7 {
+			vcc_backlight: vcc_backlight {
 				regulator-min-microvolt = <3300000>;
 				regulator-max-microvolt = <3300000>;
 				regulator-name = "vcc_backlight";
@@ -820,7 +820,7 @@
 			};
 
 			/* Rev 0.2 LCD IO Power */
-			vcc_lcd: LDO_REG8 {
+			vcc_lcd: vcc_lcd {
 				regulator-min-microvolt = <2800000>;
 				regulator-max-microvolt = <2800000>;
 				regulator-name = "vcc_lcd";
